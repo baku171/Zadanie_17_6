@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title="Log in"
+    body
+        h1 Log in
+        form(action="/logged", method="POST")
+            div.user
+                label(for="user") User: 
+                input(type="text", name="user", required='true')
+            div.pass
+                label(for="password") Password: 
+                input(type="password", name="password")
+            input(type="submit", value="Sign in")
